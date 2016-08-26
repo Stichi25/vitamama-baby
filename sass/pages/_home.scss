@@ -1,15 +1,53 @@
 @import "bourbon";
 body{
   font-size: 15px;
+  color: $color;
 }
 img{
   max-width: 100%;
   width: auto;
 }
+.stn-padding{
+  padding: 100px 0 110px 0;
+}
 //about
 .stn-about{
   @include backgroundImg('bac_rom.png');
   background-position: right bottom;
+  @extend .stn-padding;
+    .col-md-4:nth-child(4){
+      margin-top: 20px;
+    }
+    h2 {
+      @include title_lirge('GloberBook');
+      margin-bottom: 0;
+    }
+    .stn-about-text{
+      font:{
+        family:GloberBook;
+        size:em(22px);
+             }
+      color:#536275;
+      margin-bottom: 57px;
+    }
+    .plus-block{
+      width: 285px;
+      min-height: 245px;
+      margin-bottom: 30px;
+      h3{
+        font:{
+          family:GloberBold;
+          size:em(27px);
+        }
+        color:$color;
+        margin-bottom: 0;
+      }
+      p{
+        color:#536275;
+        margin-top: 0;
+      }
+    }
+
   }
 .bg-colors{
   background-color: #F0FBFF;

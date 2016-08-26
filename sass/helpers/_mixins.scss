@@ -1,4 +1,13 @@
-
+@import "bourbon";
+//back-image
 @mixin backgroundImg($filename,$position:0 0,$repeat: no-repeat) {
   background: #fff url('#{$imagedir}#{$filename}') $repeat $position;
+}
+
+//font
+@mixin title_lirge($font-family){
+  font: {
+    family: $font-family;
+    size:em(49px);
+  }
 }
