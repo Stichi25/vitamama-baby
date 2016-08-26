@@ -1,2 +1,6 @@
 @import "bourbon";
-@include font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular", $file-formats: eot woff ttf)
+
+@include font-face("GloberBold", "../fonts/GloberBold/GloberBold", $file-formats: eot woff ttf)
+@include font-face("GloberBook", "../fonts/GloberBook/GloberBook", $file-formats: eot woff ttf)
+@include font-face("GloberLight", "../fonts/GloberLight/GloberLight", $file-formats: eot woff ttf)
+@include font-face("GloberRegular", "../fonts/GloberRegular/GloberRegular", $file-formats: eot woff ttf)

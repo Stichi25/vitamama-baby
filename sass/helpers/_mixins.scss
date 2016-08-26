@@ -1,0 +1,4 @@
+
+@mixin backgroundImg($filename,$position:0 0,$repeat: no-repeat) {
+  background: #fff url('#{$imagedir}#{$filename}') $repeat $position;
+}

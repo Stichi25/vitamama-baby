@@ -1,36 +1,36 @@
 @import "bourbon";
 .sprite-age, .sprite-good, .sprite-eco,
 .sprite-hand, .sprite-flower{
-  @include background-image(url("../img/result.png") no-repeat);
+  @include background(url("../img/result.png") no-repeat);
   display: inline-block;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
 }
 .sprite-age{
-  width: 84px;
-  height: 70px;
-  background-position: -5px -156px;
+  width: 90px;
+  height: 90px;
+  background-position: 0 0;
 }
 
 .sprite-good{
-   width: 84px;
-   height: 70px;
-   background-position: -5px -156px;
+  width: 90px;
+  height: 90px;
+  background-position: 0 -106px;
  }
 .sprite-eco{
-  width: 84px;
-  height: 70px;
-  background-position: -5px -156px;
+  width: 110px;
+  height: 90px;
+  background-position: 0 -212px;
 }
 
 .sprite-hand{
-  width: 84px;
-  height: 70px;
-  background-position: -5px -156px;
+  width: 90px;
+  height: 90px;
+  background-position: 0 -342px;
 }
 .sprite-flower{
-  width: 84px;
-  height: 70px;
-  background-position: -5px -156px;
+  width: 90px;
+  height: 110px;
+  background-position: 0px -462px;
 }

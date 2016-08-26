@@ -1,5 +1,17 @@
 @import "bourbon";
+body{
+  font-size: 15px;
+}
 img{
   max-width: 100%;
   width: auto;
+}
+//about
+.stn-about{
+  @include backgroundImg('bac_rom.png');
+  background-position: right bottom;
+  }
+.bg-colors{
+  background-color: #F0FBFF;
+
 }

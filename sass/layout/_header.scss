@@ -1,6 +1,7 @@
 @import "bourbon";
 header{
-  @include background(url("../img/imidg.jpg") top center no-repeat);
+  @include backgroundImg('imidg.jpg');
+  background-position:top center;
   background-size: 100%;
   padding-bottom: 100%;
   height: 0;
