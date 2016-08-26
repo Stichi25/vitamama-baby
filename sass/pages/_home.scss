@@ -53,20 +53,24 @@ img{
 //products
 .bg-colors{
   background-color: #F0FBFF;
+  overflow:hidden;
       section{
         position: relative;
         padding-top:80px;
         padding-bottom: 127px;
+
         .bg-img-el{
           position: absolute;
         }
         .bg-img-el-1, .bg-img-el-3{
-          left: 13%;
-          top: 59px;
+          left: -23%;
+          top: 6px;
+          max-width: 14.4%;
         }
         .bg-img-el-2{
-          right: 14%;
-          bottom: 28%;
+          right: -16%;
+          bottom: 10%;
+          max-width: 14.4%;
         }
       }
       #box2{
@@ -119,27 +123,33 @@ img{
         }
         .b-elem-1{
           top: -30px;
-          right: -70px;
-          z-index: 1;
+          right: -26%;
+          z-index: 3;
           img{
             max-width: 90%;
           }
         }
         .b-elem-2{
-          top: 0;
-          right: -70px;
+          top: -40px;
+          right: -37px;
+          z-index: 1;
           img{
-            max-width: 90%;
+            max-width: 93%;
           }
         }
         .b-elem-3{
-          right: 0;
+          right: -6%;
+          z-index: 2;
+          top: 16%;
         }
         .b-elem-4{
-          right: 0;
+          right: -8%;
+          z-index: 2;
+          top: 26%;
         }
         .b-elem-5{
-         bottom: 0;
+          bottom: -60px;
+          z-index: 2;
         }
       }//.b-set-1
   .b-set-2{
@@ -149,6 +159,31 @@ img{
     .b-elem{
       position: absolute;
     }
+    .b-elem-1{
+      top: 15%;
+      left: 0;
+      z-index: 4;
+    }
+    .b-elem-2{
+      top: 66px;
+      left: 0;
+      z-index: 3;
+    }
+    .b-elem-3{
+      right:0;
+      z-index: 2;
+      top: -2.5%;
+    }
+    .b-elem-4{
+      right: 14%;
+      z-index: 2;
+      top: -32%;
+    }
+    .b-elem-5{
+      bottom: -31%;
+      z-index: 2;
+      left: 0;
+    }
   }//.b-set-2
   .b-set-3{
     position: relative;
@@ -156,6 +191,38 @@ img{
     padding-bottom: 75%;
     .b-elem{
       position: absolute;
+    }
+    .b-elem-1{
+      top: -20%;
+      left: 0;
+
+    }
+    .b-elem-2{
+      top: -24%;
+      left: 80px;
+      z-index: 1;
+      img{
+        max-width: 95%;
+      }
+
+    }
+    .b-elem-3{
+      right: 28px;
+      z-index: 2;
+      top: 27%;
+      img{
+        max-width: 90%;
+      }
+    }
+    .b-elem-4{
+      right: -29px;
+      z-index: 2;
+      top: 19%;
+    }
+    .b-elem-5{
+      bottom: -45px;
+      z-index: 2;
+      right: 0;
     }
   }//.b-set-3
 
