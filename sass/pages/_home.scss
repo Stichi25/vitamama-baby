@@ -17,11 +17,11 @@ img{
   @extend .stn-padding;
     .col-md-4:nth-child(4){
       margin-top: 20px;
-    }
+    }//.col-md-4:nth-child(4)
     h2 {
       @include title_lirge('GloberBook');
       margin-bottom: 0;
-    }
+    }//h2
     .stn-about-text{
       font:{
         family:GloberBook;
@@ -29,7 +29,7 @@ img{
              }
       color:#536275;
       margin-bottom: 57px;
-    }
+    }//.stn-about-text
     .plus-block{
       width: 285px;
       min-height: 245px;
@@ -41,15 +41,67 @@ img{
         }
         color:$color;
         margin-bottom: 0;
-      }
+      }//h3
       p{
         color:#536275;
         margin-top: 0;
-      }
-    }
+        font-family:"GloberRegular";
+      }//p
+    }//.plus-block
 
-  }
+  }//.stn-about
+//products
 .bg-colors{
   background-color: #F0FBFF;
+      section:nth-child(odd) .entry-media {
 
-}
+        float: right;
+      }
+      section:nth-child(even) .entry-media {
+        float: left;
+      }
+      .caption{
+      h2{
+        @include title_lirge('GloberLight');
+      }//h2
+      p{
+        font:{
+          family:GloberBook;
+          size:17px;
+        }
+        margin-bottom: 12px;
+      }//p
+      span{
+        font:{
+          family:GloberBook;
+          size:37px;
+        }
+      }//span
+      sup{
+        font:{
+          family:GloberRegular;
+          size:15px;
+        }
+        top: -1em;
+      }//sup
+    }//.caption
+
+      .b-set-1{
+        position: relative;
+        display: block;
+        .b-elem{
+            position: absolute;
+        }
+        .b-elem-3{
+          right: 0;
+        }
+        .b-elem-4{
+          right: 0;
+        }
+        .b-elem-5{
+         bottom: 0;
+        }
+      }//.b-set-1
+
+
+}//.bg-colors

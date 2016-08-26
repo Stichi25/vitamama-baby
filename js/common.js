@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 //** notice we are including jquery and the color plugin at
 //** http://code.jquery.com/color/jquery.color-2.1.0.js
 var sections = [];
@@ -70,4 +70,9 @@ $(window).scroll(function () {
 		}
 	});
 });
-});
+});*/
+
+$( document ).ready( function( )
+{
+	new ScrollFlow();
+} );
