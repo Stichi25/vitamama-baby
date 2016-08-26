@@ -1,1 +1,23 @@
 @import "bourbon";
+.button-isi{
+  display: inline-block;
+  font:{
+    family:GloberRegular;
+    size:em(19px);
+  }
+  color: #fff;
+
+  background-color:#ca0754;
+  padding:21px 36px 17px 36px;
+  @include border-radius(32px);
+  @include box-shadow( 0px 7px 57px -7px  #ca0754) ;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+  &:active, &:focus{
+    text-decoration: none;
+    color: #fff;
+  }
+
+}

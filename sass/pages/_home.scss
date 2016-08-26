@@ -53,6 +53,25 @@ img{
 //products
 .bg-colors{
   background-color: #F0FBFF;
+      section{
+        position: relative;
+        padding-top:80px;
+        padding-bottom: 127px;
+        .bg-img-el{
+          position: absolute;
+        }
+        .bg-img-el-1, .bg-img-el-3{
+          left: 13%;
+          top: 59px;
+        }
+        .bg-img-el-2{
+          right: 14%;
+          bottom: 28%;
+        }
+      }
+      #box2{
+        background: rgba(255, 0, 0, 0.36);
+      }
       section:nth-child(odd) .entry-media {
 
         float: right;
@@ -63,19 +82,24 @@ img{
       .caption{
       h2{
         @include title_lirge('GloberLight');
+        padding: 0;
+        margin-bottom: 15px;
       }//h2
       p{
         font:{
           family:GloberBook;
           size:17px;
         }
-        margin-bottom: 12px;
+        margin: 0 0 12px 0;
       }//p
       span{
         font:{
           family:GloberBook;
           size:37px;
         }
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 9px;
       }//span
       sup{
         font:{
@@ -89,8 +113,24 @@ img{
       .b-set-1{
         position: relative;
         display: block;
+        padding-bottom: 75%;
         .b-elem{
             position: absolute;
+        }
+        .b-elem-1{
+          top: -30px;
+          right: -70px;
+          z-index: 1;
+          img{
+            max-width: 90%;
+          }
+        }
+        .b-elem-2{
+          top: 0;
+          right: -70px;
+          img{
+            max-width: 90%;
+          }
         }
         .b-elem-3{
           right: 0;
@@ -102,6 +142,21 @@ img{
          bottom: 0;
         }
       }//.b-set-1
-
+  .b-set-2{
+    position: relative;
+    display: block;
+    padding-bottom: 75%;
+    .b-elem{
+      position: absolute;
+    }
+  }//.b-set-2
+  .b-set-3{
+    position: relative;
+    display: block;
+    padding-bottom: 75%;
+    .b-elem{
+      position: absolute;
+    }
+  }//.b-set-3
 
 }//.bg-colors
