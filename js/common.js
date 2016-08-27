@@ -8,7 +8,7 @@ var activeSection = 0;
 var pageInit = function(){
 	sections = [];
 	sectionsYStart = [];
-	$("section").each(function(i,v){
+	$('[id^="box"]').each(function(i,v){
 		sections[i] = v;
 		sectionsYStart[i] = $(v).offset().top;
 	});
@@ -59,8 +59,8 @@ $(function(){
 	pageInit();
 	$(document).scroll(ChangeColorOnScroll);
 	$(window).resize(pageInit);
-});
-
+});*/
+/*
 $(window).scroll(function () {
 	$('[id^="box"]').each(function () {
 		if (($(this).offset().top - $(window).scrollTop()) < 0) {
@@ -69,10 +69,87 @@ $(window).scroll(function () {
 			$(this).stop().fadeTo('fast', 1);
 		}
 	});
-});
 });*/
+/*});*/
 
 $( document ).ready( function( )
 {
 	new ScrollFlow();
 } );
+
+
+var content = document.getElementsByClassName('block'),
+	scrolled = null,
+	items,
+	others;
+
+function deactivate(element) {
+	'use strict';
+	var isActive = element.classList.contains('_active');
+
+	if (isActive) {
+		element.classList.remove('_active');
+	}
+
+	return isActive;
+}
+
+function deactivateAll(elements) {
+	'use strict';
+	var i;
+
+	for (i = 0; i < elements.length; i += 1) {
+		deactivate(elements[i]);
+	}
+}
+
+function toggle(list, index) {
+	'use strict';
+	var item = list[index],
+		others = list.slice(0);
+
+	if (!deactivate(item)) {
+		item.classList.add('_active');
+	}
+
+	others.splice(index, 1);
+	deactivateAll(others);
+	return true;
+}
+
+function box(item) {
+	'use strict';
+	return item.getBoundingClientRect();
+}
+
+function configure(list) {
+	'use strict';
+	return Array
+		.prototype
+		.slice
+		.call(list)
+		.sort(function(a, b) {
+			return box(a).top - box(b).top;
+		})
+		.filter(function(a) {
+			if (box(a).top + (box(a).height / 2) >= 0) {
+				return a;
+			}
+		});
+}
+
+window.addEventListener('scroll', function() {
+	'use strict';
+
+	if (scrolled !== null) {
+		clearTimeout(scrolled);
+	}
+
+	scrolled = setTimeout(function() {
+		items = configure(content);
+		others = items.slice(0);
+		items[0].classList.add('_active');
+		others.splice(0, 1)
+		deactivateAll(others);
+	}, 250);
+});

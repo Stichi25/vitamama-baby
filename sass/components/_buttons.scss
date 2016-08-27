@@ -11,13 +11,16 @@
   padding:21px 36px 17px 36px;
   @include border-radius(32px);
   @include box-shadow( 0px 7px 57px -7px  #ca0754) ;
+  transition:all 0.3s ease-in-out;
   &:hover{
     text-decoration: none;
     color: #fff;
+    @include box-shadow( 0px 7px 40px -7px  #ca0754) ;
   }
   &:active, &:focus{
     text-decoration: none;
     color: #fff;
+    @include box-shadow( 0px 7px 40px -7px  #ca0754) ;
   }
 
 }
